@@ -1,0 +1,225 @@
+/* Shared responsive overrides kept in one place for layout safety. */
+
+@media (max-width: 1400px) {
+    .app-shell {
+        gap: 1.5rem;
+        padding: 1.35rem 1.5rem;
+    }
+
+    .app-sidebar {
+        flex-basis: 300px;
+        width: 300px;
+    }
+}
+
+@media (min-width: 700px) {
+    .grid-capacity-kpi-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+
+    .power-quality-kpi-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+
+    .dashboard-widget {
+        grid-column: span var(
+            --dashboard-widget-span-tablet,
+            var(--dashboard-widget-span-mobile, 12)
+        );
+    }
+
+    #scenario-b-editor-section > div > div:first-child {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (min-width: 960px) {
+    .dashboard-widget {
+        grid-column: span var(
+            --dashboard-widget-span-desktop,
+            var(--dashboard-widget-span-tablet, var(--dashboard-widget-span-mobile, 12))
+        );
+    }
+
+    .scenario-comparison-source-options {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .scenario-comparison-run-row {
+        align-items: flex-end !important;
+        flex-wrap: nowrap !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .grid-capacity-kpi-grid {
+        grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    }
+
+    .power-quality-kpi-grid {
+        grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+    }
+
+    #scenario-b-editor-section > div > div:first-child {
+        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 1280px) {
+    #grid-capacity-secondary-region > .dashboard-widget {
+        grid-column: 1 / -1 !important;
+    }
+
+    .scenario-ab-comparison-workspace {
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+
+    .scenario-ab-evidence-panel {
+        position: static !important;
+        top: auto !important;
+    }
+
+    .scenario-ab-decision-summary-grid {
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+}
+
+@media (max-width: 960px) {
+    .app-shell {
+        flex-direction: column;
+    }
+
+    .app-sidebar {
+        flex: 1 1 auto;
+        position: static;
+        top: auto;
+        max-height: none;
+        overflow: visible;
+        width: 100%;
+    }
+
+    .scenario-sidebar-frame {
+        max-height: none;
+    }
+
+    .scenario-sidebar-content {
+        overflow-y: visible;
+        padding-right: 0;
+        padding-bottom: 0.65rem;
+    }
+
+    .scenario-sidebar-action-area {
+        position: static;
+        bottom: auto;
+        margin-top: 0.75rem;
+        padding: 1rem 1.05rem;
+        border: 1px solid var(--border);
+        border-radius: 0.5rem;
+        background: var(--surface-subtle);
+        box-shadow: none;
+        backdrop-filter: none;
+    }
+
+    .app-main-content {
+        width: 100%;
+        max-width: none;
+    }
+
+    .smart-charging-hero-grid {
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+
+    .scenario-comparison-run-row {
+        flex-direction: column;
+        align-items: stretch !important;
+    }
+
+    .scenario-comparison-run-actions {
+        justify-content: stretch !important;
+        min-width: 0 !important;
+        width: 100%;
+    }
+
+    .scenario-ab-comparison-workspace {
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+
+    .scenario-ab-evidence-panel {
+        position: static !important;
+        top: auto !important;
+    }
+
+    .scenario-comparison-run-actions .scenario-comparison-primary-action {
+        width: 100%;
+    }
+
+    .scenario-comparison-template-select-shell,
+    .scenario-comparison-parameter-field {
+        max-width: none;
+        width: 100%;
+    }
+
+    .scenario-sidebar-primary-grid--operating-pattern {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 760px) {
+    .infrastructure-kpi-grid {
+        grid-template-columns: minmax(0, 1fr) !important;
+        grid-auto-rows: auto;
+    }
+
+    .infrastructure-kpi-grid > div {
+        height: auto;
+        min-height: 7.5rem;
+    }
+
+    .scenario-sidebar-field-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .scenario-sidebar-group {
+        gap: 0.6rem;
+    }
+
+    .scenario-sidebar-advanced-grid {
+        padding: 0.7rem;
+    }
+
+    .scenario-sidebar-action-area {
+        padding: 0.75rem 0.8rem;
+    }
+
+    .scenario-comparison-builder-collapsed-bar {
+        top: 0.5rem !important;
+        grid-template-columns: minmax(0, 1fr) !important;
+        align-items: stretch !important;
+    }
+
+    .scenario-comparison-builder-collapsed-bar button {
+        flex: 1 1 10rem;
+        width: 100%;
+    }
+
+    .scenario-comparison-builder-collapsed-bar > div:first-child,
+    .scenario-comparison-builder-collapsed-bar > div:last-child {
+        width: 100%;
+        justify-content: stretch !important;
+    }
+}
+
+@media (max-height: 800px) and (min-width: 1100px) {
+    .app-shell {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .dashboard-tab-panel {
+        padding-top: 0.75rem;
+    }
+
+    .scenario-comparison-builder-widget {
+        margin-bottom: 0.25rem;
+    }
+}
