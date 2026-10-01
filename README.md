@@ -82,13 +82,13 @@ Then open [http://127.0.0.1:8050/](http://127.0.0.1:8050/).
 
 ## Documentation Map
 
-- [docs/architecture.md](/C:/Users/valko/SECHA-EV-charging-data-demonstrator/docs/architecture.md)
-- [docs/simulation-and-modelling.md](/C:/Users/valko/SECHA-EV-charging-data-demonstrator/docs/simulation-and-modelling.md)
-- [docs/formulas.md](/C:/Users/valko/SECHA-EV-charging-data-demonstrator/docs/formulas.md)
-- [docs/kpi-reference.md](/C:/Users/valko/SECHA-EV-charging-data-demonstrator/docs/kpi-reference.md)
-- [docs/assumptions-and-limitations.md](/C:/Users/valko/SECHA-EV-charging-data-demonstrator/docs/assumptions-and-limitations.md)
-- [docs/scenario-catalogue.md](/C:/Users/valko/SECHA-EV-charging-data-demonstrator/docs/scenario-catalogue.md)
-- [docs/testing-and-validation.md](/C:/Users/valko/SECHA-EV-charging-data-demonstrator/docs/testing-and-validation.md)
+- [docs/architecture.md](./docs/architecture.md)
+- [docs/simulation-and-modelling.md](./docs/simulation-and-modelling.md)
+- [docs/formulas.md](./docs/formulas.md)
+- [docs/kpi-reference.md](./docs/kpi-reference.md)
+- [docs/assumptions-and-limitations.md](./docs/assumptions-and-limitations.md)
+- [docs/scenario-catalogue.md](./docs/scenario-catalogue.md)
+- [docs/testing-and-validation.md](./docs/testing-and-validation.md)
 
 ## Main Limitations
 
