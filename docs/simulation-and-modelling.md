@@ -14,7 +14,7 @@ Charging-allowed windows and vehicle-arrival windows can cross midnight. If a wi
 
 ## Arrival Modelling
 
-Arrival generation is implemented in [simulation/arrivals.py](/C:/Users/valko/SECHA-EV-charging-data-demonstrator/simulation/arrivals.py).
+Arrival generation is implemented in [simulation/arrivals.py](../simulation/arrivals.py).
 
 The simulation creates an arrival-count series that always sums exactly to `scenario.vehicles`.
 
@@ -34,7 +34,7 @@ If `arrival_window_start == arrival_window_end`, the current implementation trea
 
 ## Request Generation
 
-Charging requests are generated in [simulation/requests.py](/C:/Users/valko/SECHA-EV-charging-data-demonstrator/simulation/requests.py).
+Charging requests are generated in [simulation/requests.py](../simulation/requests.py).
 
 Each modeled vehicle becomes one charging request with:
 
@@ -129,7 +129,7 @@ This provides the baseline behavior used for comparison.
 
 ### Smart Charging
 
-`Smart Charging` uses a deterministic heuristic implemented in [simulation/assignment.py](/C:/Users/valko/SECHA-EV-charging-data-demonstrator/simulation/assignment.py).
+`Smart Charging` uses a deterministic heuristic implemented in [simulation/assignment.py](../simulation/assignment.py).
 
 Its current behavior is:
 
@@ -167,4 +167,4 @@ The current preset catalogue covers several distinct behaviors:
 - concentrated-arrival workplace charging
 - power-quality-sensitive AC charging
 
-See [scenario-catalogue.md](/C:/Users/valko/SECHA-EV-charging-data-demonstrator/docs/scenario-catalogue.md) for the current built-in set.
+See [scenario-catalogue.md](../docs/scenario-catalogue.md) for the current built-in set.

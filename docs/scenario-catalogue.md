@@ -1,6 +1,6 @@
 # Scenario Catalogue
 
-This document describes the built-in scenario presets currently registered in [scenarios/presets.py](/C:/Users/valko/SECHA-EV-charging-data-demonstrator/scenarios/presets.py).
+This document describes the built-in scenario presets currently registered in [scenarios/presets.py](../scenarios/presets.py).
 
 ## Heavy-duty
 

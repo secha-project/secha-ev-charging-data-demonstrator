@@ -278,4 +278,4 @@ Those sections are driven by prepared comparison display data rather than by a f
 - Higher is not always better or worse; for example, higher delivered energy can be desirable while higher capacity utilization may indicate tighter operating headroom.
 - Narrative cards such as `Scenario Outcome`, `Service Impact`, and `Grid / Infrastructure Status` should be read alongside the underlying numeric KPIs.
 
-For implementation formulas behind these KPIs, see [formulas.md](/C:/Users/valko/SECHA-EV-charging-data-demonstrator/docs/formulas.md).
+For implementation formulas behind these KPIs, see [formulas.md](../docs/formulas.md).

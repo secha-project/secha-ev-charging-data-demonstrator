@@ -31,7 +31,7 @@ The repository includes an extensive `pytest` suite covering:
 
 ## Reference Scenarios
 
-The suite includes dedicated reference-scenario tests in [tests/test_reference_scenarios.py](/C:/Users/valko/SECHA-EV-charging-data-demonstrator/tests/test_reference_scenarios.py).
+The suite includes dedicated reference-scenario tests in [tests/test_reference_scenarios.py](../tests/test_reference_scenarios.py).
 
 These tests are especially important because they verify behavioral intent rather than only isolated helper functions. They cover cases such as:
 

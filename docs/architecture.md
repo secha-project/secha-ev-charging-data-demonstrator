@@ -38,7 +38,7 @@ The scenario layer is the input contract for the entire demonstrator. It owns:
 - Charging-strategy selection
 - Planning settings such as waiting-tolerance and planning-margin values
 
-The built-in catalogue lives in [scenarios/presets.py](/C:/Users/valko/SECHA-EV-charging-data-demonstrator/scenarios/presets.py).
+The built-in catalogue lives in [scenarios/presets.py](../scenarios/presets.py).
 
 ### Simulation Layer
 
@@ -55,7 +55,7 @@ The simulation layer owns all modeled operational behavior:
 - Feeder loading
 - Simplified phase and harmonic risk signals
 
-It returns raw simulation outputs in typed dataclasses defined in [simulation/result.py](/C:/Users/valko/SECHA-EV-charging-data-demonstrator/simulation/result.py).
+It returns raw simulation outputs in typed dataclasses defined in [simulation/result.py](../simulation/result.py).
 
 ### Metrics Layer
 
@@ -84,7 +84,7 @@ The dashboard layer owns:
 - Comparison presentation
 - Empty states and explanatory text
 
-The application entry point in [app.py](/C:/Users/valko/SECHA-EV-charging-data-demonstrator/app.py) wires the layout and callbacks together. The dashboard currently exposes these top-level tabs:
+The application entry point in [app.py](../app.py) wires the layout and callbacks together. The dashboard currently exposes these top-level tabs:
 
 - `Overview`
 - `Infrastructure`

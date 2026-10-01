@@ -20,7 +20,7 @@ Energy from any power profile is therefore integrated as:
 
 ### Daily Energy Demand
 
-Implemented in [simulation/formulas.py](/C:/Users/valko/SECHA-EV-charging-data-demonstrator/simulation/formulas.py):
+Implemented in [simulation/formulas.py](../simulation/formulas.py):
 
 `daily_energy_demand_kwh = vehicles * daily_energy_per_vehicle_kwh`
 
@@ -60,7 +60,7 @@ This is intentionally different from delivered peak load. It represents the conn
 
 ### Delivered Energy
 
-Implemented in [simulation/load_profiles.py](/C:/Users/valko/SECHA-EV-charging-data-demonstrator/simulation/load_profiles.py):
+Implemented in [simulation/load_profiles.py](../simulation/load_profiles.py):
 
 `delivered_energy_kwh = sum(delivered_load_profile_kw) * 0.25`
 
@@ -100,7 +100,7 @@ For each timestep:
 
 `capacity_exceedance_duration_hours = exceeded_timestep_count * 0.25`
 
-The metrics layer treats exceedance as persistent when the exceedance count reaches the current persistence threshold used in [metrics/constraint_analysis.py](/C:/Users/valko/SECHA-EV-charging-data-demonstrator/metrics/constraint_analysis.py).
+The metrics layer treats exceedance as persistent when the exceedance count reaches the current persistence threshold used in [metrics/constraint_analysis.py](../metrics/constraint_analysis.py).
 
 ## Charger Utilization and Queue Formulas
 
@@ -138,7 +138,7 @@ The dashboard metrics expose the average and maximum over started requests only.
 
 ## Transformer Formulas
 
-Implemented in [simulation/formulas.py](/C:/Users/valko/SECHA-EV-charging-data-demonstrator/simulation/formulas.py):
+Implemented in [simulation/formulas.py](../simulation/formulas.py):
 
 ### Transformer Total Load
 
@@ -162,7 +162,7 @@ When transformer capacity is positive:
 
 ## Feeder Formulas
 
-Implemented in [simulation/grid_loading.py](/C:/Users/valko/SECHA-EV-charging-data-demonstrator/simulation/grid_loading.py).
+Implemented in [simulation/grid_loading.py](../simulation/grid_loading.py).
 
 ### Feeder EV Allocation
 
@@ -190,7 +190,7 @@ These are demonstrator indicators, not compliance calculations.
 
 ### Harmonic Risk Score
 
-Implemented in [simulation/power_quality.py](/C:/Users/valko/SECHA-EV-charging-data-demonstrator/simulation/power_quality.py):
+Implemented in [simulation/power_quality.py](../simulation/power_quality.py):
 
 `harmonic_risk_score = 100 * load_factor * source_mix_factor * concentration_factor`
 
@@ -202,7 +202,7 @@ The current imbalance indicator is derived from the spread between modeled phase
 
 ### Overall PQ Risk Score
 
-Implemented in [metrics/power_quality.py](/C:/Users/valko/SECHA-EV-charging-data-demonstrator/metrics/power_quality.py):
+Implemented in [metrics/power_quality.py](../metrics/power_quality.py):
 
 `overall_pq_risk_score = 0.6 * harmonic_risk_score + 0.4 * normalized_current_imbalance`
 
@@ -214,7 +214,7 @@ The blended score is then bounded to `0..100`.
 
 ## Recommended Connection Capacity Rule
 
-Recommended capacity is not a simple copy of peak requested load. The implementation applies decision logic from [metrics/constraint_analysis.py](/C:/Users/valko/SECHA-EV-charging-data-demonstrator/metrics/constraint_analysis.py):
+Recommended capacity is not a simple copy of peak requested load. The implementation applies decision logic from [metrics/constraint_analysis.py](../metrics/constraint_analysis.py):
 
 - If required capacity is effectively zero, recommend `0`
 - If the current configured capacity is judged adequate, recommend the configured capacity
